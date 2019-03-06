@@ -3,7 +3,7 @@ QUnit.module('render object test');
 
 test('render object data to the screen', function(assert) {
     //arrange
-    function makeSiteFriendlyExistObject(exitJsonmaybe) {
+    function passSiteFriendlyObjectToDom(exitJsonmaybe) {
         const html = /*html*/`
        <main>
         <table id="table">
@@ -59,7 +59,7 @@ test('render object data to the screen', function(assert) {
         "last_name": "L",
     };
     
-    const result = makeSiteFriendlyExistObject(dummyData);
+    const result = passSiteFriendlyObjectToDom(dummyData);
     //assert
 
 
